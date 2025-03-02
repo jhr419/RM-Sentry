@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 TH, 12, LIC=MPPLD-8AXVV-12LLE-5HVXD-09QMI-AEG5F
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+E:\WorkFiles\Code\MCU\Sentry\Sentry_GimbalV2\MDK-ARM\Sentry_GimbalV2.uvprojx
+Project File Date:  02/22/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\Bin'
+Build target 'Sentry_GimbalV2'
+compiling remote_control.c...
+../apps/auto_aim.h(15): warning:  #1295-D: Deprecated declaration auto_aim_send - give arg types
+  void auto_aim_send();
+../apps/ammo_booster_control.h(11): warning:  #47-D: incompatible redefinition of macro "RAD_TO_DEGREE"  (declared at line 10 of "../kits/typedef.h")
+  #define RAD_TO_DEGREE 2*PI/360
+../apps/ammo_booster_control.h(14): warning:  #47-D: incompatible redefinition of macro "ANGLE_TO_ECD"  (declared at line 27 of "../apps/gimbal_control.h")
+  #define ANGLE_TO_ECD(angle) ((uint16_t)angle * ECD_RANGE / 360) //?360?
+..\kits\remote_control.c(27): warning:  #550-D: variable "imu_info"  was set but never used
+  	imu_info_t* imu_info;
+..\kits\remote_control.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=23184 RO-data=1936 RW-data=268 ZI-data=20708  
+FromELF: creating hex file...
+"Sentry_GimbalV2\Sentry_GimbalV2.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Sentry_GimbalV2
+  D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
