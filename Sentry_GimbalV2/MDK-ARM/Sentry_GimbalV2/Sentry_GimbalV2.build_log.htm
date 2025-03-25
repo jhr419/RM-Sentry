@@ -21,32 +21,17 @@ Target DLL:      CMSIS_AGDI.dll V1.28.3.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-E:\WorkFiles\Code\MCU\Sentry\Sentry_GimbalV2\MDK-ARM\Sentry_GimbalV2.uvprojx
+E:\WorkFiles\Code\MCU\RM-Sentry\Sentry_GimbalV2\MDK-ARM\Sentry_GimbalV2.uvprojx
 Project File Date:  03/25/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\Bin'
 Build target 'Sentry_GimbalV2'
 compiling gimbal_control.c...
-..\apps\auto_aim.h(15): warning:  #1295-D: Deprecated declaration auto_aim_send - give arg types
-  void auto_aim_send();
-../apps/ammo_booster_control.h(11): warning:  #47-D: incompatible redefinition of macro "RAD_TO_DEGREE"  (declared at line 10 of "../kits/typedef.h")
-  #define RAD_TO_DEGREE 2*PI/360
-../apps/ammo_booster_control.h(14): warning:  #47-D: incompatible redefinition of macro "ANGLE_TO_ECD"  (declared at line 27 of "..\apps\gimbal_control.h")
-  #define ANGLE_TO_ECD(angle) ((uint16_t)angle * ECD_RANGE / 360) //?360?
-../kits/filter.h(19): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\apps\gimbal_control.c(96): warning:  #177-D: variable "type"  was declared but never referenced
-  	uint8_t type = pGimbal->type;
-..\apps\gimbal_control.c(97): warning:  #177-D: variable "mode"  was declared but never referenced
-  	uint8_t mode = pGimbal->mode;
-..\apps\gimbal_control.c(111): warning:  #177-D: variable "mode"  was declared but never referenced
-  	uint8_t mode = pGimbal->mode;
-..\apps\gimbal_control.c: 7 warnings, 0 errors
 linking...
-Program Size: Code=23500 RO-data=1936 RW-data=280 ZI-data=20840  
+Program Size: Code=24228 RO-data=1936 RW-data=304 ZI-data=21104  
 FromELF: creating hex file...
-"Sentry_GimbalV2\Sentry_GimbalV2.axf" - 0 Error(s), 7 Warning(s).
+"Sentry_GimbalV2\Sentry_GimbalV2.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 

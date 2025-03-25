@@ -53,13 +53,13 @@ I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../kits/CAN_in_motors.h)(0x67E0DCC5)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../apps/car.h)(0x67B9D92B)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 F (../Core/Src/gpio.c)(0x67B76102)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\gpio.o --omf_browse sentry_gimbalv2\gpio.crf --depend sentry_gimbalv2\gpio.d)
 I (../Core/Inc/gpio.h)(0x678A3B9B)
@@ -1067,7 +1067,7 @@ F (..\kits\CAN_in_motors.c)(0x67DFE021)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apc
 I (..\kits\CAN_in_motors.h)(0x67E0DCC5)
 I (..\kits\typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\kits\motors.h)(0x67E27180)
+I (..\kits\motors.h)(0x67E30832)
 I (..\kits\pid.h)(0x6785D126)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
@@ -1141,9 +1141,9 @@ I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../bsp/bsp_uart.h)(0x678A2974)
 I (..\kits\crc.h)(0x67B9C1E2)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdarg.h)(0x588B8344)
-I (../apps/auto_aim.h)(0x67BA9169)
-F (..\kits\motors.c)(0x67E1B7C9)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\motors.o --omf_browse sentry_gimbalv2\motors.crf --depend sentry_gimbalv2\motors.d)
-I (..\kits\motors.h)(0x67E27180)
+I (../apps/auto_aim.h)(0x67E2E5E1)
+F (..\kits\motors.c)(0x67E3083F)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\motors.o --omf_browse sentry_gimbalv2\motors.crf --depend sentry_gimbalv2\motors.d)
+I (..\kits\motors.h)(0x67E30832)
 I (..\kits\typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\kits\pid.h)(0x6785D126)
@@ -1181,16 +1181,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x64CA45BE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
-F (..\kits\remote_control.c)(0x67E260D9)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\remote_control.o --omf_browse sentry_gimbalv2\remote_control.crf --depend sentry_gimbalv2\remote_control.d)
+F (..\kits\remote_control.c)(0x67E30FBE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\remote_control.o --omf_browse sentry_gimbalv2\remote_control.crf --depend sentry_gimbalv2\remote_control.d)
 I (..\kits\remote_control.h)(0x67E1278C)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1221,7 +1221,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x64CA45BE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../apps/car.h)(0x67B9D92B)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\math.h)(0x588B8344)
@@ -1265,12 +1265,12 @@ I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B83
 I (../Core/Inc/dma.h)(0x678A3B9E)
 I (../apps/car.h)(0x67B9D92B)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 F (..\kits\crc.c)(0x67B9C1E3)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\crc.o --omf_browse sentry_gimbalv2\crc.crf --depend sentry_gimbalv2\crc.d)
 I (..\kits\crc.h)(0x67B9C1E2)
@@ -1283,20 +1283,20 @@ I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B834
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdarg.h)(0x588B8344)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B8344)
 F (..\kits\filter.c)(0x67E1A20C)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\filter.o --omf_browse sentry_gimbalv2\filter.crf --depend sentry_gimbalv2\filter.d)
-I (..\kits\filter.h)(0x67E1C111)
+I (..\kits\filter.h)(0x67E2E643)
 I (..\kits\typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B8344)
-F (..\apps\car.c)(0x67E28D04)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\car.o --omf_browse sentry_gimbalv2\car.crf --depend sentry_gimbalv2\car.d)
+F (..\apps\car.c)(0x67E31275)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\car.o --omf_browse sentry_gimbalv2\car.crf --depend sentry_gimbalv2\car.d)
 I (..\apps\car.h)(0x67B9D92B)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\apps\chassis_control.h)(0x67BA9324)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (..\apps\gimbal_control.h)(0x67E18F42)
-I (..\apps\auto_aim.h)(0x67BA9169)
+I (..\apps\gimbal_control.h)(0x67E307D9)
+I (..\apps\auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1327,16 +1327,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x64CA45BE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
-I (..\apps\ammo_booster_control.h)(0x67B83B79)
+I (..\apps\ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
-F (..\apps\gimbal_control.c)(0x67E29CB3)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\gimbal_control.o --omf_browse sentry_gimbalv2\gimbal_control.crf --depend sentry_gimbalv2\gimbal_control.d)
-I (..\apps\gimbal_control.h)(0x67E18F42)
+F (..\apps\gimbal_control.c)(0x67E312DD)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\gimbal_control.o --omf_browse sentry_gimbalv2\gimbal_control.crf --depend sentry_gimbalv2\gimbal_control.d)
+I (..\apps\gimbal_control.h)(0x67E307D9)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (..\apps\auto_aim.h)(0x67BA9169)
+I (..\apps\auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1369,7 +1369,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
 I (../kits/remote_control.h)(0x67E1278C)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../apps/car.h)(0x67B9D92B)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\math.h)(0x588B8344)
@@ -1393,18 +1393,18 @@ I (../Core/Inc/usart.h)(0x67B76106)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B8344)
 I (../Core/Inc/dma.h)(0x678A3B9E)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-I (../kits/filter.h)(0x67E1C111)
-F (..\apps\ammo_booster_control.c)(0x67E1D16C)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\ammo_booster_control.o --omf_browse sentry_gimbalv2\ammo_booster_control.crf --depend sentry_gimbalv2\ammo_booster_control.d)
-I (..\apps\ammo_booster_control.h)(0x67B83B79)
+I (../kits/filter.h)(0x67E2E643)
+F (..\apps\ammo_booster_control.c)(0x67E309D4)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\ammo_booster_control.o --omf_browse sentry_gimbalv2\ammo_booster_control.crf --depend sentry_gimbalv2\ammo_booster_control.d)
+I (..\apps\ammo_booster_control.h)(0x67E2E60C)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../kits/remote_control.h)(0x67E1278C)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1439,8 +1439,8 @@ I (../apps/car.h)(0x67B9D92B)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\math.h)(0x588B8344)
 I (../kits/CAN_in_motors.h)(0x67E0DCC5)
-F (..\apps\auto_aim.c)(0x67BA9504)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\auto_aim.o --omf_browse sentry_gimbalv2\auto_aim.crf --depend sentry_gimbalv2\auto_aim.d)
-I (..\apps\auto_aim.h)(0x67BA9169)
+F (..\apps\auto_aim.c)(0x67E309DD)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\auto_aim.o --omf_browse sentry_gimbalv2\auto_aim.crf --depend sentry_gimbalv2\auto_aim.d)
+I (..\apps\auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1473,8 +1473,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\apps\gimbal_control.h)(0x67E18F42)
-I (../kits/motors.h)(0x67E27180)
+I (..\apps\gimbal_control.h)(0x67E307D9)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../kits/communication.h)(0x67BA6731)
@@ -1483,7 +1483,7 @@ I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B83
 I (../Core/Inc/dma.h)(0x678A3B9E)
 I (..\apps\car.h)(0x67B9D92B)
 I (..\apps\chassis_control.h)(0x67BA9324)
-I (..\apps\ammo_booster_control.h)(0x67B83B79)
+I (..\apps\ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (../kits/crc.h)(0x67B9C1E2)
 I (../bsp/bsp_uart.h)(0x678A2974)
@@ -1493,11 +1493,11 @@ I (../apps/car.h)(0x67B9D92B)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1528,7 +1528,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x64CA45BE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x64CA45BE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x64CA45BE)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x64CA459B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x64CA459B)
@@ -1599,22 +1599,22 @@ I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\string.h)(0x588B83
 I (../Core/Inc/dma.h)(0x678A3B9E)
 I (../apps/car.h)(0x67B9D92B)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../kits/motors.h)(0x67E27180)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
-F (..\tasks\gimbal_task.c)(0x67E1CF4C)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\gimbal_task.o --omf_browse sentry_gimbalv2\gimbal_task.crf --depend sentry_gimbalv2\gimbal_task.d)
+F (..\tasks\gimbal_task.c)(0x67E2FA68)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../bsp -I ../kits -I ../apps -I ../tasks-I.\RTE\_Sentry_GimbalV2-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include"-I"D:\engineering software\keil5\keil5 5.24\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o sentry_gimbalv2\gimbal_task.o --omf_browse sentry_gimbalv2\gimbal_task.crf --depend sentry_gimbalv2\gimbal_task.d)
 I (..\tasks\gimbal_task.h)(0x678A2557)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../kits/motors.h)(0x67E27180)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
-I (../apps/auto_aim.h)(0x67BA9169)
+I (../apps/auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)
@@ -1661,7 +1661,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x64CA459B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x64CA459B)
 I (../apps/car.h)(0x67B9D92B)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
 I (../kits/imu_protocol.h)(0x67B7DBD2)
 I (../kits/communication.h)(0x67BA6731)
 I (../Core/Inc/usart.h)(0x67B76106)
@@ -1671,8 +1671,8 @@ F (..\tasks\ammo_booster_task.c)(0x67E1C6EF)(--c99 -c --cpu Cortex-M4.fp -g -O3 
 I (..\tasks\ammo_booster_task.h)(0x678BDA43)
 I (../kits/typedef.h)(0x67BA9397)
 I (D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (../apps/ammo_booster_control.h)(0x67B83B79)
-I (../kits/motors.h)(0x67E27180)
+I (../apps/ammo_booster_control.h)(0x67E2E60C)
+I (../kits/motors.h)(0x67E30832)
 I (../kits/pid.h)(0x6785D126)
 I (../bsp/bsp_rc.h)(0x67B61AF3)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x64CA459B)
@@ -1693,8 +1693,8 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x64CA459B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x64CA459B)
 I (../apps/car.h)(0x67B9D92B)
 I (../apps/chassis_control.h)(0x67BA9324)
-I (../apps/gimbal_control.h)(0x67E18F42)
-I (../apps/auto_aim.h)(0x67BA9169)
+I (../apps/gimbal_control.h)(0x67E307D9)
+I (../apps/auto_aim.h)(0x67E2E5E1)
 I (../Core/Inc/main.h)(0x67E29B7C)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x64CA45BE)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x678A3B9F)

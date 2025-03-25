@@ -11,6 +11,7 @@ motor_9025_pid_t 		motor_9025_pid;
 motor_9025_ecd_data_t 	motor_9025_ecd_data;
 
 pid_t motor_3508_pid[4];
+pid_t motor_6020_gyroPid[3];
 pid_t motor_6020_ecdPid[3];
 pid_t motor_6020_rpmPid[3];
 
@@ -77,8 +78,12 @@ motor_3508_t* motors_3508_init(uint8_t mode, fp32 PID3508[3], fp32 max_out, fp32
 }
 
 motor_6020_t* motors_6020_init(	uint8_t mode, 
+																fp32 YawGyroPID[3],fp32 PitchGyroPID[3],
 																fp32 YawEcdPID[3], fp32 PitchEcdPID[3], 
 																fp32 YawRpmPID[3], fp32 PitchRpmPID[3], 
+
+																fp32 Yaw_gyro_max_out, fp32 Yaw_gyro_max_iout,
+																fp32 Pitch_gyro_max_out, fp32 Pitch_gyro_max_iout,
 
 																fp32 Yaw_ecd_max_out, fp32 Yaw_ecd_max_iout,
 																fp32 Pitch_ecd_max_out, fp32 Pitch_ecd_max_iout,
@@ -86,6 +91,16 @@ motor_6020_t* motors_6020_init(	uint8_t mode,
 																fp32 Yaw_Rpm_max_out, fp32 Yaw_Rpm_max_iout,
 																fp32 Pitch_Rpm_max_out, fp32 Pitch_Rpm_max_iout){
 	//配置所有系数
+	//gyro
+	motors_6020[0].gyroPid_coefficient[0]  = YawGyroPID[0];
+	motors_6020[0].gyroPid_coefficient[1]  = YawGyroPID[1];
+	motors_6020[0].gyroPid_coefficient[2]  = YawGyroPID[2];
+	               
+	motors_6020[1].gyroPid_coefficient[0]  = PitchGyroPID[0];
+	motors_6020[1].gyroPid_coefficient[1]  = PitchGyroPID[1];
+	motors_6020[1].gyroPid_coefficient[2]  = PitchGyroPID[2];
+																	
+	//ecd													
 	motors_6020[0].ecdPid_coefficient[0]  = YawEcdPID[0];
 	motors_6020[0].ecdPid_coefficient[1]  = YawEcdPID[1];
 	motors_6020[0].ecdPid_coefficient[2]  = YawEcdPID[2];
@@ -94,6 +109,7 @@ motor_6020_t* motors_6020_init(	uint8_t mode,
 	motors_6020[1].ecdPid_coefficient[1]  = PitchEcdPID[1];
 	motors_6020[1].ecdPid_coefficient[2]  = PitchEcdPID[2];
 	
+	//rpm
 	motors_6020[0].rpmPid_coefficient[0]  = YawRpmPID[0];
 	motors_6020[0].rpmPid_coefficient[1]  = YawRpmPID[1];
 	motors_6020[0].rpmPid_coefficient[2]  = YawRpmPID[2];
@@ -104,10 +120,12 @@ motor_6020_t* motors_6020_init(	uint8_t mode,
 	
 	for(int i=0;i<__COUNT(motors_6020);i++){
 		motors_6020[i].hmotor_6020_measure = motors_6020_measure + i;
+		motors_6020[i].gyroPid			 = motor_6020_gyroPid + i;
 		motors_6020[i].ecdPid			   = motor_6020_ecdPid	+ i;
-		
 		motors_6020[i].rpmPid			   = motor_6020_rpmPid	+ i;
 	}
+	PID_init(motors_6020[0].gyroPid, mode, motors_6020[0].gyroPid_coefficient, Yaw_gyro_max_out, Yaw_gyro_max_iout);
+	PID_init(motors_6020[1].gyroPid, mode, motors_6020[1].gyroPid_coefficient, Pitch_gyro_max_out, Pitch_gyro_max_iout);
 	
 	PID_init(motors_6020[0].ecdPid, mode, motors_6020[0].ecdPid_coefficient, Yaw_ecd_max_out, Yaw_ecd_max_iout);
 	PID_init(motors_6020[1].ecdPid, mode, motors_6020[1].ecdPid_coefficient, Pitch_ecd_max_out, Pitch_ecd_max_iout);

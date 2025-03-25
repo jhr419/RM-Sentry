@@ -8,10 +8,7 @@
 
 #define PI 	   3.14159265358979323846l
 #define ROOT_2 1.41421356237309504880l
-#define RAD_TO_DEGREE 2*PI/360
-
 #define ECD_RANGE 8192
-#define ANGLE_TO_ECD(angle) ((uint16_t)angle * ECD_RANGE / 360) //?360?
 
 //TODO:
 #define GIMBAL_MOTOR_MAX_RPM 1200

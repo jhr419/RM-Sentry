@@ -12,5 +12,5 @@ typedef struct{
 }aim_info_t;
 
 void decode_recv_data(uint8_t *data);
-void auto_aim_send();
+void auto_aim_send(void);
 #endif

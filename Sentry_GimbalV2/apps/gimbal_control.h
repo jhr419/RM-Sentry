@@ -59,10 +59,16 @@ typedef struct{
 }gimbal_t;
 
 void gimbal_init(	uint8_t mode, 
+									fp32 YawGyroPID[3], fp32 PitchPID[3], 
 									fp32 YawEcdPID[3], fp32 PitchEcdPID[3], 
 									fp32 YawRpmPID[3], fp32 PitchRpmPID[3], 
+
+									fp32 Yaw_gyro_max_out, fp32 Yaw_gyro_max_iout,
+									fp32 Pitch_gyro_max_out, fp32 Pitch_gyro_max_iout,
+
 									fp32 Yaw_ecd_max_out, fp32 Yaw_ecd_max_iout,
 									fp32 Pitch_ecd_max_out, fp32 Pitch_ecd_max_iout,
+
 									fp32 Yaw_Rpm_max_out, fp32 Yaw_Rpm_max_iout,
 									fp32 Pitch_Rpm_max_out, fp32 Pitch_Rpm_max_iout);
 void gimbal_control(gimbal_t* pGimbal, rc_info_t* pRC);

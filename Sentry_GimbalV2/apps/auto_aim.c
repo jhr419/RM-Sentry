@@ -27,7 +27,7 @@ void decode_recv_data(uint8_t *data){
 	}
 }
 
-void auto_aim_send(){
+void auto_aim_send(void){
 	temp1[0] = 0xE7;
 	temp1[1] = 0x7E;
 	temp1[2] = 20;

@@ -18,9 +18,6 @@ void ammo_booster_init(uint8_t mode, fp32 TriggerPID[3], fp32 BoosterPID[3],
 	ammo_booster.trigger_l = motor_trigger_arr;
 	ammo_booster.trigger_r = motor_trigger_arr + 1;
 	
-	//TODO ammo motor id 
-//	ammo_booster.trigger_l->hmotor_3508_measure = &motors_ammo_measure[0];
-//	ammo_booster.trigger_r->hmotor_3508_measure = &motors_ammo_measure[1];
 	ammo_booster.trigger_l->hmotor_3508_measure = &motors_3508_measure[0];
 	ammo_booster.trigger_r->hmotor_3508_measure = &motors_3508_measure[1];
 
@@ -72,6 +69,6 @@ void ammo_booster_control(ammo_booster_t* pAmmo_booster, rc_info_t* pRC)
 							-pAmmo_booster->trigger_r->pid->out,
 							0,0);
 
-	//ÎªÊ²Ã´ºÍ6020¿ØÖÆ³åÍ»
+	//²¦µ¯ÅÌ¿ØÖÆÔÚgimbal
 //	CAN_Control2006Current(0,0,pAmmo_booster->booster->pid->out,0);
 }
