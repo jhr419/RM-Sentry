@@ -65,7 +65,8 @@ void Error_Handler(void);
 #define LED_B_GPIO_Port GPIOH
 
 /* USER CODE BEGIN Private defines */
-
+#define VICE_GIMBAL_LEFT
+//#define VICE_GIMBAL_RIGHT
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

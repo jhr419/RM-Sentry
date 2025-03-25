@@ -646,6 +646,11 @@
               <FileType>1</FileType>
               <FilePath>..\kits\imu_protocol.c</FilePath>
             </File>
+            <File>
+              <FileName>filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\kits\filter.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -655,11 +660,6 @@
               <FileName>car.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\apps\car.c</FilePath>
-            </File>
-            <File>
-              <FileName>chassis_control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\apps\chassis_control.c</FilePath>
             </File>
             <File>
               <FileName>gimbal_control.c</FileName>
@@ -685,11 +685,6 @@
               <FileName>car_state_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\tasks\car_state_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>chassis_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\tasks\chassis_task.c</FilePath>
             </File>
             <File>
               <FileName>communication_tasks.c</FileName>

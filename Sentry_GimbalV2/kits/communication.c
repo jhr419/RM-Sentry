@@ -54,11 +54,6 @@ void uart1_printf(const char *fmt,...)
 
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 {
-    /* Prevent unused argument(s) compilation warning */
-    // UNUSED(huart);
-    /* NOTE: This function should not be modified, when the callback is needed,
-the HAL_UART_ErrorCallback could be implemented in the user file
-*/
     if( huart->ErrorCode & HAL_UART_ERROR_ORE )//Overflow error
    {
        uint32_t temp = huart->Instance->SR;

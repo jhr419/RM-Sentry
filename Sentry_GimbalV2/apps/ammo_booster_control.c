@@ -72,5 +72,6 @@ void ammo_booster_control(ammo_booster_t* pAmmo_booster, rc_info_t* pRC)
 							-pAmmo_booster->trigger_r->pid->out,
 							0,0);
 
-//	CAN_Control2006Current(0,0,,0);
+	//为什么和6020控制冲突
+//	CAN_Control2006Current(0,0,pAmmo_booster->booster->pid->out,0);
 }

@@ -76,8 +76,16 @@ motor_3508_t* motors_3508_init(uint8_t mode, fp32 PID3508[3], fp32 max_out, fp32
 	return motors_3508;
 }
 
-motor_6020_t* motors_6020_init(uint8_t mode, fp32 YawEcdPID[3], fp32 PitchEcdPID[3], fp32 rpmPID[3] , fp32 ecd_max_out, fp32 ecd_max_iout, fp32 rpm_max_out, fp32 rpm_max_iout)
-{
+motor_6020_t* motors_6020_init(	uint8_t mode, 
+																fp32 YawEcdPID[3], fp32 PitchEcdPID[3], 
+																fp32 YawRpmPID[3], fp32 PitchRpmPID[3], 
+
+																fp32 Yaw_ecd_max_out, fp32 Yaw_ecd_max_iout,
+																fp32 Pitch_ecd_max_out, fp32 Pitch_ecd_max_iout,
+
+																fp32 Yaw_Rpm_max_out, fp32 Yaw_Rpm_max_iout,
+																fp32 Pitch_Rpm_max_out, fp32 Pitch_Rpm_max_iout){
+	//配置所有系数
 	motors_6020[0].ecdPid_coefficient[0]  = YawEcdPID[0];
 	motors_6020[0].ecdPid_coefficient[1]  = YawEcdPID[1];
 	motors_6020[0].ecdPid_coefficient[2]  = YawEcdPID[2];
@@ -86,22 +94,26 @@ motor_6020_t* motors_6020_init(uint8_t mode, fp32 YawEcdPID[3], fp32 PitchEcdPID
 	motors_6020[1].ecdPid_coefficient[1]  = PitchEcdPID[1];
 	motors_6020[1].ecdPid_coefficient[2]  = PitchEcdPID[2];
 	
+	motors_6020[0].rpmPid_coefficient[0]  = YawRpmPID[0];
+	motors_6020[0].rpmPid_coefficient[1]  = YawRpmPID[1];
+	motors_6020[0].rpmPid_coefficient[2]  = YawRpmPID[2];
+																	
+	motors_6020[1].rpmPid_coefficient[0]  = PitchRpmPID[0];
+	motors_6020[1].rpmPid_coefficient[1]  = PitchRpmPID[1];
+	motors_6020[1].rpmPid_coefficient[2]  = PitchRpmPID[2];
 	
-	for(int i=0;i<__COUNT(motors_6020);i++)
-	{
+	for(int i=0;i<__COUNT(motors_6020);i++){
 		motors_6020[i].hmotor_6020_measure = motors_6020_measure + i;
-		
 		motors_6020[i].ecdPid			   = motor_6020_ecdPid	+ i;
-		PID_init(motors_6020[i].ecdPid, mode, motors_6020[i].ecdPid_coefficient, ecd_max_out, ecd_max_iout);
 		
 		motors_6020[i].rpmPid			   = motor_6020_rpmPid	+ i;
-		motors_6020[i].rpmPid_coefficient[0]  = rpmPID[0];
-		motors_6020[i].rpmPid_coefficient[1]  = rpmPID[1];
-		motors_6020[i].rpmPid_coefficient[2]  = rpmPID[2];
-		
-		PID_init(motors_6020[i].rpmPid, mode, motors_6020[i].rpmPid_coefficient, rpm_max_out, rpm_max_iout);
 	}
 	
+	PID_init(motors_6020[0].ecdPid, mode, motors_6020[0].ecdPid_coefficient, Yaw_ecd_max_out, Yaw_ecd_max_iout);
+	PID_init(motors_6020[1].ecdPid, mode, motors_6020[1].ecdPid_coefficient, Pitch_ecd_max_out, Pitch_ecd_max_iout);
+	
+	PID_init(motors_6020[0].rpmPid, mode, motors_6020[0].rpmPid_coefficient, Yaw_Rpm_max_out, Yaw_Rpm_max_iout);
+	PID_init(motors_6020[1].rpmPid, mode, motors_6020[1].rpmPid_coefficient, Pitch_Rpm_max_out, Pitch_Rpm_max_iout);
 	return motors_6020;
 }
 

@@ -72,8 +72,6 @@ typedef enum
 		CAN_3508_SEND_ID = 0x200,
 		CAN_3508_M1_ID = 0x201,
 		CAN_3508_M2_ID = 0x202,
-		CAN_3508_M3_ID = 0x203,
-		CAN_3508_M4_ID = 0x204,
 		
 		CAN_6020_SEND_ID = 0x1FF,
 		CAN_6020_M1_ID = 0x205,
@@ -81,7 +79,7 @@ typedef enum
 		
 		CAN_2006_SEND_ID = 0x1FF,
 		CAN_2006_M1_ID = 0x207,
-		CAN_2006_M2_ID = 0x208,
+//		CAN_2006_M2_ID = 0x208,
 		
 		CAN_MF_SEND_ID = 0x140,
 		CAN_9025_M1_ID = 0x141

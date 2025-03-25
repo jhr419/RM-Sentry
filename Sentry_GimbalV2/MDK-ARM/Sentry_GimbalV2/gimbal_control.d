@@ -58,3 +58,9 @@ sentry_gimbalv2\gimbal_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/inc
 sentry_gimbalv2\gimbal_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 sentry_gimbalv2\gimbal_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 sentry_gimbalv2\gimbal_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
+sentry_gimbalv2\gimbal_control.o: ../kits/communication.h
+sentry_gimbalv2\gimbal_control.o: ../Core/Inc/usart.h
+sentry_gimbalv2\gimbal_control.o: D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\Bin\..\include\string.h
+sentry_gimbalv2\gimbal_control.o: ../Core/Inc/dma.h
+sentry_gimbalv2\gimbal_control.o: D:\engineering software\keil5\keil5 5.24\ARM\ARMCC\Bin\..\include\stdlib.h
+sentry_gimbalv2\gimbal_control.o: ../kits/filter.h

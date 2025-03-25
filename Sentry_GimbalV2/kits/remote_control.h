@@ -11,8 +11,8 @@
 #include "imu_protocol.h"
 
 #define GIMBAL_MODE_RC 1
-#define GIMBAL_MODE_AUTO_AIM 2
 #define GIMBAL_MODE_HOLD 3
+#define GIMBAL_MODE_AUTO_AIM 2
 
 #define CHANNEL_RANGE  660
 #define CHANNEL_OFFSET 1024

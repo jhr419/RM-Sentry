@@ -6,8 +6,8 @@
 #include "pid.h"
 #include "bsp_rc.h"
 #include "auto_aim.h"
-#define ECD_RANGE 8192
 
+#define ECD_RANGE 8192
 
 //TODO：
 #define GIMBAL_MOTOR_MAX_RPM 1200
@@ -19,7 +19,7 @@
 #define ZERO_SPEED 1
 #define FOLLOW_RC  2
 #define ANGLE_CMD  3
-#define GUARD	   4
+#define GUARD	   	 4
 #define TRACKING   5
 
 #define RC_DEADZONE 20
@@ -52,32 +52,19 @@ typedef struct{
 	motor_6020_t* yaw;
 	motor_6020_t* pitch;
 	motor_6020_t* roll;
-	
-	//feedback
-	int32_t pose_angle_roll;
-	int32_t pose_angle_pitch;
-	int32_t pose_angle_yaw;
-	
-	//last value
-	int16_t last_pose_angle_roll;
-	int16_t last_pose_angle_yaw;
-	int16_t last_pose_angle_pitch;
-	
-	//set value
-	int16_t given_pose_angle_roll;
-	int16_t given_pose_angle_yaw;
-	int16_t given_pose_angle_pitch;
-	
-	uint16_t given_pose_ecd_yaw;
-	uint16_t given_pose_ecd_pitch;
-	uint16_t given_pose_ecd_roll;
-	
+
 	uint8_t type;//针对不同构型的云台，主要是自由度不同
 	uint8_t mode;//警戒，敌跟踪，角度控制，遥控，零速自由
 
 }gimbal_t;
 
-void gimbal_init(uint8_t mode, fp32 ecdPID[3], fp32 rpmPID[3], fp32 pitchPID[3], fp32 ecd_max_out, fp32 ecd_max_iout, fp32 rpm_max_out, fp32 rpm_max_iout);
+void gimbal_init(	uint8_t mode, 
+									fp32 YawEcdPID[3], fp32 PitchEcdPID[3], 
+									fp32 YawRpmPID[3], fp32 PitchRpmPID[3], 
+									fp32 Yaw_ecd_max_out, fp32 Yaw_ecd_max_iout,
+									fp32 Pitch_ecd_max_out, fp32 Pitch_ecd_max_iout,
+									fp32 Yaw_Rpm_max_out, fp32 Yaw_Rpm_max_iout,
+									fp32 Pitch_Rpm_max_out, fp32 Pitch_Rpm_max_iout);
 void gimbal_control(gimbal_t* pGimbal, rc_info_t* pRC);
 
 #endif

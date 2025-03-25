@@ -72,8 +72,14 @@ typedef struct{
 	
 	pid_t* ecdPid;
 	pid_t* rpmPid;
+	
+	int16_t last_angle;
+	//feedback
+	int16_t fb_angle;
+	
+	//set value
 	int16_t given_speed_rpm;
-	uint16_t given_angle;
+	int16_t given_angle;
 	uint16_t given_ecd;
 }motor_6020_t;
 
@@ -86,7 +92,13 @@ typedef struct{
 }motor_2006_t;
 
 motor_3508_t* motors_3508_init(uint8_t mode, fp32 PID3508[3], fp32 max_out, fp32 max_iout);
-motor_6020_t* motors_6020_init(uint8_t mode, fp32 YawEcdPID[3], fp32 PitchEcdPID[3], fp32 rpmPID[3] , fp32 ecd_max_out, fp32 ecd_max_iout, fp32 rpm_max_out, fp32 rpm_max_iout);
+motor_6020_t* motors_6020_init(	uint8_t mode, 
+																fp32 YawEcdPID[3], fp32 PitchEcdPID[3], 
+																fp32 YawRpmPID[3], fp32 PitchRpmPID[3], 
+																fp32 Yaw_ecd_max_out, fp32 Yaw_ecd_max_iout,
+																fp32 Pitch_ecd_max_out, fp32 Pitch_ecd_max_iout,
+																fp32 Yaw_Rpm_max_out, fp32 Yaw_Rpm_max_iout,
+																fp32 Pitch_Rpm_max_out, fp32 Pitch_Rpm_max_iout);
 motor_3508_t* motors_ammo_init(uint8_t mode, fp32 PID[3], fp32 max_out, fp32 max_iout);
 motor_2006_t* motors_2006_init(uint8_t mode, fp32 PID[3], fp32 max_out, fp32 max_iout);
 

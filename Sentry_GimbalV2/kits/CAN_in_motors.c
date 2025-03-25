@@ -158,53 +158,40 @@ void CAN_Control9025AngleIncrement(uint32_t id, uint32_t maxSpeed, int32_t angle
 */
 
 uint8_t rx_data[8];
-void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
-{
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan){
     CAN_RxHeaderTypeDef rx_header;
    
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, rx_data);
 
-    switch (rx_header.StdId)
-    {
-		case CAN_3508_M1_ID:
-        case CAN_3508_M2_ID:
-//        case CAN_3508_M3_ID:
-//        case CAN_3508_M4_ID:
-        {
+    switch (rx_header.StdId){
+				case CAN_3508_M1_ID:
+        case CAN_3508_M2_ID:{
             static uint8_t i = 0;
             //get motor id
             i = rx_header.StdId - CAN_3508_M1_ID;
             get_motor_3508_measure(&motors_3508_measure[i], rx_data);
             break;
         }
-				
-		case CAN_6020_M1_ID:
-        case CAN_6020_M2_ID:
-		{
-			static uint8_t i = 0;
-            //get motor id
-            i = rx_header.StdId - CAN_6020_M1_ID;
-            get_motor_6020_measure(&motors_6020_measure[i], rx_data);
-            break;
-		}
-				
-		case CAN_2006_M1_ID:
-        case CAN_2006_M2_ID:        
-        {
-            static uint8_t i = 0;
-            //get motor id
-            i = rx_header.StdId - CAN_2006_M1_ID;
-            get_motor_2006_measure(&motors_2006_measure[i], rx_data);
-            break;
-        }
-				
-				case CAN_9025_M1_ID:
-				{
-						get_motor_9025_measure(&motor_9025, rx_data);
-						break;
+				case CAN_6020_M1_ID:
+				case CAN_6020_M2_ID:{
+					static uint8_t i = 0;
+          //get motor id
+          i = rx_header.StdId - CAN_6020_M1_ID;
+          get_motor_6020_measure(&motors_6020_measure[i], rx_data);
+          break;
 				}
-				
-        default: break;	
+				case CAN_2006_M1_ID:{
+          static uint8_t i = 0;
+          //get motor id
+          i = rx_header.StdId - CAN_2006_M1_ID;
+          get_motor_2006_measure(&motors_2006_measure[i], rx_data);
+          break;
+				}
+				case CAN_9025_M1_ID:{
+					get_motor_9025_measure(&motor_9025, rx_data);
+					break;
+				}
+				default: break;	
     }
 }
 

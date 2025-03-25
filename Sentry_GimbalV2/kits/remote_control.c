@@ -23,6 +23,9 @@ void rc_to_vector(chassis_t* pChassis, rc_info_t* pRC)
 
 void rc_to_angle(gimbal_t* pGimbal, rc_info_t* pRC)
 {
+	pGimbal->yaw->last_angle = car.pImu_info->yaw.data;
+	pGimbal->pitch->last_angle = car.pImu_info->roll.data;
+	
 	aim_info_t* aim_info;
 	imu_info_t* imu_info;
 	
@@ -38,24 +41,24 @@ void rc_to_angle(gimbal_t* pGimbal, rc_info_t* pRC)
 	switch(pGimbal->mode){
 		case GIMBAL_MODE_RC:
 			if(ch_offsetYaw > 0) 
-				pGimbal->given_pose_angle_yaw = pGimbal->last_pose_angle_yaw - 10`;
+				pGimbal->yaw->given_angle = pGimbal->yaw->last_angle - 10;
 			else if(ch_offsetYaw < 0) 
-				pGimbal->given_pose_angle_yaw = pGimbal->last_pose_angle_yaw + 10;
+				pGimbal->yaw->given_angle = pGimbal->yaw->last_angle + 10;
 			
 			//todo pitch roll
 			if(ch_offsetPitch > 0) 
-				pGimbal->given_pose_angle_pitch = pGimbal->last_pose_angle_pitch + 5;
+				pGimbal->pitch->given_angle = pGimbal->pitch->last_angle + 6;
 			else if(ch_offsetPitch < 0) 
-				pGimbal->given_pose_angle_pitch = pGimbal->last_pose_angle_pitch - 2;
-			
+				pGimbal->pitch->given_angle = pGimbal->pitch->last_angle - 3;
 			break;
 		case GIMBAL_MODE_HOLD:
-			pGimbal->given_pose_angle_yaw = pGimbal->last_pose_angle_yaw;
-			pGimbal->given_pose_angle_pitch = pGimbal->last_pose_angle_pitch;
+			pGimbal->yaw->given_angle = imu_info->yaw.data;
+			pGimbal->pitch->given_angle = imu_info->roll.data;
 			break;
+		
 		case GIMBAL_MODE_AUTO_AIM:
-			pGimbal->given_pose_angle_yaw = (int16_t)(aim_info->target_yaw.data);
-			pGimbal->given_pose_angle_pitch = (int16_t)(aim_info->target_pitch.data);
+			pGimbal->yaw->given_angle = (int16_t)(aim_info->target_yaw.data);
+			pGimbal->pitch->given_angle = (int16_t)(aim_info->target_pitch.data);
 			break;
 		default:
 			break;

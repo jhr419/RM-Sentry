@@ -14,12 +14,13 @@ void StartGimbalTask(void const * argument)
 {   
 	HAL_GPIO_WritePin(GPIOH, LED_B_Pin, GPIO_PIN_SET);
 	osDelay(500);
-	car.pGimbal->given_pose_angle_yaw = (int16_t)(car.pImu_info->yaw.data);
-	car.pGimbal->given_pose_angle_pitch = (int16_t)(car.pImu_info->roll.data);
+	car.pGimbal->yaw->given_angle = (int16_t)(car.pImu_info->yaw.data);
+	car.pGimbal->pitch->given_angle = 270;
 	osDelay(500);
 	while(1)
 	{
 		gimbal_control(car.pGimbal,car.pRC);
+//		uart1_printf("%d\n",car.pGimbal->yaw->hmotor_6020_measure->ecd);
 		osDelay(1);
 	}
 }
